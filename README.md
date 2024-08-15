@@ -2,8 +2,7 @@
 
 ## Live Link: https://dashboard-by-sohag.netlify.app/
 
-
-# Running the Client Side using bash
+# Running Code using bash
 
 1. Clone the Repository:
 
@@ -14,6 +13,6 @@
 
 - npm install
 
- 4. Run the Application:
+4.  Run the Application:
 
 - npm run dev

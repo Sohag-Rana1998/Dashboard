@@ -103,9 +103,19 @@ const Navbar = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
+
               <ul
                 className={`menu bg-base-200 text-base-content min-h-full w-48 p-4`}
               >
+                <li>
+                  <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    className="input w-full text-black border mx-auto bg-gray-200  "
+                    placeholder="Search..."
+                  />
+                </li>
                 {userLinks}
               </ul>
             </div>

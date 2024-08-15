@@ -10,7 +10,10 @@ const DashboardRight = () => {
   return (
     <div className=" w-full">
       <div className="flex flex-col md:flex-row gap-5">
+        {/* Left Part */}
         <div className="w-full md:w-[40%]">
+          {/* First Card */}
+
           <div className="w-full p-6  bg-gradient-to-r from-[#4163E9] to-[#BDC9F5] rounded-[20px] flex items-center justify-center gap-3 ">
             <div className="text-white">
               <h3 className="text-xl font-medium">
@@ -57,6 +60,8 @@ const DashboardRight = () => {
               </div>
             </div>
           </div>
+
+          {/* Second Card */}
           <div className="w-full group p-6 mt-5 border hover:text-white border-1 border-[#4163E9] shadow-sm bg-[#F7F7FF]  hover:bg-gradient-to-r from-[#4163E9] to-[#BDC9F5] rounded-[20px] flex items-center justify-center gap-3 ">
             <div className="">
               <h3 className="text-xl font-medium">
@@ -104,6 +109,8 @@ const DashboardRight = () => {
               </div>
             </div>
           </div>
+
+          {/* Third Card */}
           <div className="w-full p-6 mt-5 border border-1 border-[#4163E9] shadow-sm bg-[#F7F7FF]  hover:bg-gradient-to-r from-[#4163E9] to-[#BDC9F5] rounded-[20px] flex items-center justify-center gap-3 hover:text-white">
             <div className="">
               <h3 className="text-xl font-medium">
@@ -152,7 +159,10 @@ const DashboardRight = () => {
             </div>
           </div>
         </div>
+
+        {/* Right Part */}
         <div className="w-full md:w-[60%] ">
+          {/* First Column */}
           <div className="flex flex-col md:flex-row items-start md:items-center gap-5">
             <div className="border w-full bg-[#F7F7FF)] rounded-[20px] p-5">
               <div className="flex justify-between">
@@ -187,6 +197,8 @@ const DashboardRight = () => {
               </div>
             </div>
           </div>
+
+          {/* Barchart Column */}
           <div className=" bg-[#F7F7FF)]  shadow border rounded-[20px] p-5 mt-5">
             <div className="flex  justify-between items-center gap-3 ">
               <h3 className="text-xl font-medium">Course Activity</h3>
@@ -224,6 +236,8 @@ const DashboardRight = () => {
               <BarChart />
             </div>
           </div>
+
+          {/* Table Column */}
           <div className=" bg-[#F7F7FF)] border shadow rounded-[20px] p-5 mt-5">
             <div className="flex  justify-between items-center gap-3 ">
               <h3 className="text-xl font-medium">Reminders</h3>

@@ -6,10 +6,13 @@ import Navbar from "./components/Navbar";
 
 const Dashboard = () => {
   return (
-    <div className="flex items-stretch gap-5 max-w-[1320px] w-full mx-auto font-poppins">
+    <div className="flex items-stretch gap-5 max-w-[1320px] w-full mx-auto font-poppins mt-5">
+      {/* Menu */}
       <div>
         <NavigationMenu />
       </div>
+
+      {/* Main Content */}
       <div
         style={{ scrollbarWidth: "none" }}
         className="w-full h-screen overflow-y-scroll "
