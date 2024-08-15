@@ -1,20 +1,124 @@
 import React from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { IoMdNotificationsOutline } from "react-icons/io";
+import { MdDashboard } from "react-icons/md";
+import { IoSettingsOutline } from "react-icons/io5";
+import { IoBookOutline } from "react-icons/io5";
+import { FaGraduationCap } from "react-icons/fa";
+import { BiCube } from "react-icons/bi";
+import { FiDollarSign } from "react-icons/fi";
+import { BiBarChartAlt2 } from "react-icons/bi";
+import { FaRegChartBar } from "react-icons/fa";
+import { MdLogout } from "react-icons/md";
 const Navbar = () => {
+  const role = "user";
+
+  const userLinks = (
+    <>
+      <li className="w-full h-full px-0 py-0 rounded-none">
+        <a className="flex items-center  gap-1   font-semibold rounded-none">
+          {" "}
+          <MdDashboard /> Overview
+        </a>
+      </li>
+      <li className="w-full h-full px-0 py-0 ">
+        <a className="flex items-center  gap-1   font-semibold rounded-none">
+          {" "}
+          <IoBookOutline /> My Course
+        </a>
+      </li>
+      <li className="w-full h-full px-0 py-0 rounded-none">
+        <a className="flex items-center  gap-1   font-semibold rounded-none">
+          {" "}
+          <FaGraduationCap /> Completed
+        </a>
+      </li>
+      <li className="w-full h-full px-0 py-0 rounded-none">
+        <a className="flex items-center  gap-1   font-semibold rounded-none">
+          {" "}
+          <BiCube />
+          Financial Aid
+        </a>
+      </li>
+      <li className="w-full h-full px-0 py-0 rounded-none">
+        <a className="flex items-center  gap-1   font-semibold rounded-none">
+          <FiDollarSign /> Transactions
+        </a>
+      </li>
+      <li className="w-full h-full px-0 py-0 rounded-none">
+        <a className="flex items-center  gap-1   font-semibold rounded-none">
+          <BiBarChartAlt2 /> Reports
+        </a>
+      </li>
+      <li className="w-full h-full px-0 py-0 rounded-none">
+        <a className="flex items-center  gap-1   font-semibold rounded-none">
+          <FaRegChartBar /> Statistics
+        </a>
+      </li>
+      <li className="w-full h-full px-0 py-0 rounded-none">
+        <a className="flex items-center  gap-1   font-semibold rounded-none">
+          <MdLogout /> Support
+        </a>
+      </li>
+      <li className="w-full h-full px-0 py-0 rounded-none">
+        <a className="flex items-center  gap-1   font-semibold rounded-none">
+          <IoSettingsOutline /> Settings
+        </a>
+      </li>
+    </>
+  );
+
   return (
     <div>
       <div className="navbar bg-base-100 justify-between gap-10 w-full ">
         <div className="flex">
+          <div className="drawer  w-14  lg:w-0 mr-2 lg:mr-0">
+            <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content  w-14  lg:w-0">
+              {/* Page content here */}
+              <label
+                htmlFor="my-drawer"
+                className="btn bg-gray-200 !bg-opacity-40 !border-none flex lg:hidden"
+              >
+                <svg
+                  onClick={() => setMenuToggle(true)}
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`h-5 w-5  `}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="#000"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+            </div>
+            <div className="drawer-side">
+              <label
+                htmlFor="my-drawer"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <ul
+                className={`menu bg-base-200 text-base-content min-h-full w-48 p-4`}
+              >
+                {userLinks}
+              </ul>
+            </div>
+          </div>
           <div>
-            <button className="text-2xl font-medium text-[#6C72FF] mr-16 focus:outline-none">
+            <button className="text-2xl font-medium text-[#6C72FF]  focus:outline-none">
               Overview
             </button>
           </div>
         </div>
 
-        <div className="flex-1">
-          <div className="w-full mr-5">
+        <div className="flex-1 w-full  flex justify-end">
+          <div className="w-full mr-3 hidden md:block">
             <div className="relative w-full">
               <label htmlFor="search"></label>
               <input
@@ -31,7 +135,7 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle mr-5"
+              className="btn btn-ghost btn-circle mr-3"
             >
               <div className="indicator text-[#4163E9]">
                 <IoMdNotificationsOutline className="text-3xl" />
@@ -57,7 +161,7 @@ const Navbar = () => {
                 alt="user image"
                 className="w-12 h-12 rounded-full"
               />
-              <div className="w-36">
+              <div className="whitespace-nowrap">
                 <h4 className="font-medium">Alexa Calen</h4>
                 <h5 className="text-sm text-[#072F33]">Student</h5>
               </div>

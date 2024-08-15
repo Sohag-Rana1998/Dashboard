@@ -1,9 +1,5 @@
 import { MdDashboard } from "react-icons/md";
-import { GrHistory } from "react-icons/gr";
-import { RiShoppingBagLine } from "react-icons/ri";
-import { FaRegHeart } from "react-icons/fa";
 import { IoSettingsOutline } from "react-icons/io5";
-import { RiLogoutBoxLine } from "react-icons/ri";
 import { IoBookOutline } from "react-icons/io5";
 import { FaGraduationCap } from "react-icons/fa";
 import { BiCube } from "react-icons/bi";
@@ -60,7 +56,7 @@ const NavigationMenu = () => {
   );
 
   return (
-    <div className="w-64  h-screen bg-[#F7F7FF]">
+    <div className="w-64  h-screen bg-[#F7F7FF] !hidden lg:!block">
       <div>
         <a className="btn btn-ghost text-xl">
           <img src="/Logo.png" alt="site logo" />

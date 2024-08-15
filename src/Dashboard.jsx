@@ -6,15 +6,15 @@ import Navbar from "./components/Navbar";
 
 const Dashboard = () => {
   return (
-    <div className="flex items-start gap-5 h-screen max-w-7xl w-full mx-auto ">
+    <div className="flex items-stretch gap-5 max-w-[1320px] w-full mx-auto font-poppins">
       <div>
         <NavigationMenu />
       </div>
-      <div className="w-full">
+      <div className="w-full h-screen overflow-y-scroll">
         <div>
           <Navbar />
         </div>
-        <div>
+        <div className="mt-5">
           <DashboardRight />
         </div>
       </div>
