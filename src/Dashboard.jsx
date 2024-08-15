@@ -10,7 +10,10 @@ const Dashboard = () => {
       <div>
         <NavigationMenu />
       </div>
-      <div className="w-full h-screen overflow-y-scroll">
+      <div
+        style={{ scrollbarWidth: "none" }}
+        className="w-full h-screen overflow-y-scroll "
+      >
         <div>
           <Navbar />
         </div>

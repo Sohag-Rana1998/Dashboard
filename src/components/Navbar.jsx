@@ -70,7 +70,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-100 justify-between gap-10 w-full ">
+      <div className="navbar bg-base-100 justify-between gap-5 w-full ">
         <div className="flex">
           <div className="drawer  w-14  lg:w-0 mr-2 lg:mr-0">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -117,15 +117,15 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex-1 w-full  flex justify-end">
-          <div className="w-full mr-3 hidden md:block">
+        <div className=" w-full  flex justify-end">
+          <div className="w-full md:ml-10  lg:ml-16 mr-3 hidden md:block">
             <div className="relative w-full">
               <label htmlFor="search"></label>
               <input
                 type="text"
                 name="search"
                 id="search"
-                className="py-3 pl-3 md:pl-10 w-full text-black border mx-auto   bg-[#EFEFEF] rounded-[42px]"
+                className="py-3 pl-3 md:pl-10   w-full text-black border mx-auto   bg-[#EFEFEF] rounded-[42px]"
                 placeholder="Search..."
               />
               <FaMagnifyingGlass className="absolute left-5 md:left-3  top-4 text-gray-400" />
@@ -154,14 +154,14 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="w-auto md:w-60">
             <div className="flex items-center gap-3">
               <img
                 src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
                 alt="user image"
                 className="w-12 h-12 rounded-full"
               />
-              <div className="whitespace-nowrap">
+              <div className="hidden md:block">
                 <h4 className="font-medium">Alexa Calen</h4>
                 <h5 className="text-sm text-[#072F33]">Student</h5>
               </div>
